@@ -1,0 +1,24 @@
+{
+  "name": "smallscrum",
+  "version": "0.1.0",
+  "description": "An agile project management system specifically suited for the needs of digital agencies.",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": "JoshTumath/smallscrum",
+  "bugs": "https://tree.taiga.io/project/joshtumath-smallscrum/",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "author": {
+    "name": "Josh Tumath",
+    "email": "josh@joshtumath.uk",
+    "url": "https://joshtumath.uk/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
+}
