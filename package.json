@@ -1,10 +1,11 @@
 {
-  "name": "smallscrum",
+  "name": "smallscrum-server",
   "version": "0.1.0",
   "description": "An agile project management system specifically suited for the needs of digital agencies.",
   "private": true,
   "main": "server.js",
   "scripts": {
+    "build": "node bin/build.js",
     "test": ""
   },
   "repository": "JoshTumath/smallscrum",
