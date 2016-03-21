@@ -15,7 +15,7 @@ before_install:
 
 install:
   - npm install
-  - node/build.js --cache
+  - npm run-script build
 
 script:
   - npm test
