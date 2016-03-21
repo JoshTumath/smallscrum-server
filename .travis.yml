@@ -14,6 +14,7 @@ before_install:
   - npm config set spin false
 
 install:
+  - npm install -g bower
   - npm install
   - npm run-script build
 
