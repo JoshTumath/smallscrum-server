@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "build": "node bin/build.js",
-    "test": ""
+    "test": "mocha tests"
   },
   "repository": "JoshTumath/smallscrum",
   "bugs": "https://tree.taiga.io/project/joshtumath-smallscrum/",
