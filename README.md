@@ -10,8 +10,10 @@ and the persistent storage.
 You will need the following things properly installed on your computer.
 
 * [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* The prerequisites for the SmallScrum Ember application
+* [Node.js](http://nodejs.org/) 4.x LTS version (with NPM)
+
+If you do not already have the SmallScrum Ember application repository set up
+on your system, you will need the prerequisites for that as well.
 
 ## Installation
 
