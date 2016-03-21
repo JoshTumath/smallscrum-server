@@ -7,7 +7,6 @@ sudo: false
 
 cache:
   directories:
-    - .ember
     - node_modules
 
 before_install:
@@ -16,7 +15,7 @@ before_install:
 install:
   - npm install -g bower
   - npm install
-  - npm run-script build
+  #- npm run-script build
 
 script:
   - npm test
