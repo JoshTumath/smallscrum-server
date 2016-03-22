@@ -19,7 +19,10 @@
     "url": "https://joshtumath.uk/"
   },
   "license": "MIT",
-  "devDependencies": {
-    "express": "^4.13.4"
+  "dependencies": {
+    "express": "^4.13.4",
+    "fortune": "^3.3.3",
+    "fortune-json-api": "^2.0.1",
+    "fortune-mongodb": "^1.1.2"
   }
 }
