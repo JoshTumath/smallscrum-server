@@ -27,5 +27,9 @@ describe('/api/', function () {
         }
       }, done);
     });
+
+    it('should respond with a 404 error to a non-existant API', function (done) {
+      jsonapi.get(server, 'foobarbaz')().expect(404, done);
+    });
   });
 });
