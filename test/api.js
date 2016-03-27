@@ -1,14 +1,25 @@
 'use strict';
 
 const jsonapi = require('./helpers/json-api-request-factory');
-const server = require('../server');
+const store = require('../app/store');
+const serverSetup = require('./helpers/server-setup');
 
 describe('/api/', function () {
+  let app;
+
+  before('setup server', function (done) {
+    app = serverSetup.create(store, done);
+  });
+
+  after('teardown server', function (done) {
+    serverSetup.destroy(done);
+  });
+
   describe('GET', function () {
     let request;
 
     before(function () {
-      request = jsonapi.get(server, '');
+      request = jsonapi.get(app, '');
     });
 
     it('should respond to GET /api/', function (done) {
@@ -29,7 +40,7 @@ describe('/api/', function () {
     });
 
     it('should respond with a 404 error to a non-existant API', function (done) {
-      jsonapi.get(server, 'foobarbaz')().expect(404, done);
+      jsonapi.get(app, 'foobarbaz')().expect(404, done);
     });
   });
 });
