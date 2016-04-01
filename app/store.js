@@ -7,7 +7,7 @@ module.exports = new Fortune({
 }, {
   adapter: [
     mongodbAdapter, {
-      url: 'mongodb://localhost/smallscrum'
+      url: 'mongodb://localhost:27017/smallscrum'
     }
   ]
 });
