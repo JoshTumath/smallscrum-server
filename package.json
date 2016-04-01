@@ -21,9 +21,9 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.13.4",
-    "fortune": "^3.3.3",
-    "fortune-json-api": "^2.0.1",
-    "fortune-mongodb": "^1.1.2"
+    "fortune": "3.x",
+    "fortune-json-api": "2.x",
+    "fortune-mongodb": "1.x"
   },
   "devDependencies": {
     "supertest": "^1.2.0"
