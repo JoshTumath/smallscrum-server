@@ -1,0 +1,13 @@
+{
+  "camelcase": true,
+  "immed": true,
+  "latedef": true,
+  "newcap": true,
+  "quotmark": true,
+
+  "esversion": 6,
+
+  "browser": false,
+  "mocha": true,
+  "node": true
+}

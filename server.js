@@ -1,19 +1,17 @@
-const express = require('express');
-const routes = require('./app/routes');
+'use strict';
 
-const app = express();
+const server = require('./app');
+const Fortune = require('fortune');
+const store = require('./app/store');
+
 const port = process.env.PORT || 3000;
 
-// Configuration ///////////////////////////////////////////////////////////////
-// The location from which the Ember application will be served
-app.use(express.static(__dirname + '/public'));
+// Set up the server
+const app = server(store, __dirname);
 
-// Routes //////////////////////////////////////////////////////////////////////
-routes(app, __dirname);
-
-// Listen //////////////////////////////////////////////////////////////////////
-app.listen(port, () => {
-  console.log('Listening on port ' + port);
+// Wait until database connection is set up before setting up server port
+store.connect().then(() => {
+  app.listen(port, () => {
+    console.log('Listening on port ' + port);
+  });
 });
-
-module.exports = app;
