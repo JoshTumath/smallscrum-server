@@ -1,8 +1,8 @@
 'use strict';
 
-const server = require('./app');
+const server = require('./lib');
 const Fortune = require('fortune');
-const store = require('./app/store');
+const store = require('./lib/store');
 
 const port = process.env.PORT || 3000;
 

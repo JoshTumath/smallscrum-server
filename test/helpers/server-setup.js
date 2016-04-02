@@ -1,7 +1,7 @@
 'use strict';
 
-const server = require('../../app');
-const store = require('../../app/store');
+const server = require('../../lib');
+const store = require('../../lib/store');
 
 const PORT = 3000;
 

@@ -2,7 +2,7 @@
 
 const expectations = require('./helpers/json-api-expectations');
 const RequestFactory = require('./helpers/json-api-request-factory');
-const store = require('../app/store');
+const store = require('../lib/store');
 const serverSetup = require('./helpers/server-setup');
 
 describe('/api/projects', function () {
