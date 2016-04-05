@@ -40,5 +40,5 @@ const CACHE_DIR = '.ember';
   exec(`cd ${CACHE_DIR} && npm install && bower install`);
 
   console.log('Building Ember application...');
-  exec(`cd ${CACHE_DIR} && ember build -o ../public`);
+  exec(`cd ${CACHE_DIR} && ember build -prod -o ../public`);
 })();
