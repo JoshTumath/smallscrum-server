@@ -27,6 +27,7 @@
     "fortune-mongodb": "1.x"
   },
   "devDependencies": {
+    "env-test": "^1.0.0",
     "supertest": "^1.2.0"
   }
 }
