@@ -1,5 +1,5 @@
 # SmallScrum Server
-[![Build Status](https://travis-ci.com/JoshTumath/smallscrum-server.svg?token=tp7LrsAJ5P39ZTw9qWtB&branch=master)](https://travis-ci.com/JoshTumath/smallscrum-server)
+[![Build Status](https://travis-ci.org/JoshTumath/smallscrum-server.svg?branch=master)](https://travis-ci.org/JoshTumath/smallscrum-server)
 
 This is the server application for SmallScrum. It presents the Ember application
 to site visitors and handles the JSON API for communication between the client
