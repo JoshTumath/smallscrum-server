@@ -20,7 +20,7 @@ describe('/api/userStories', function () {
     let apiRequest;
 
     before(function () {
-      apiRequest = RequestFactory.get(app, 'userStories');
+      apiRequest = RequestFactory.get(app, 'user-stories');
 
       return store.request({
         type: 'project',
@@ -32,7 +32,7 @@ describe('/api/userStories', function () {
         const projectId = res.payload.records[0].id;
 
         return store.request({
-          type: 'userStory',
+          type: 'user-story',
           method: 'create',
           payload: [
             { name: 'As a test, I want to work so that I can pass', project: projectId },
@@ -47,11 +47,11 @@ describe('/api/userStories', function () {
     after(function (done) {
       // Delete everything in the collection once we're done
       store.adapter.db.collection('project').deleteMany({}, () => {
-        store.adapter.db.collection('userStory').deleteMany({}, done);
+        store.adapter.db.collection('user-story').deleteMany({}, done);
       });
     });
 
-    it('should respond to GET /api/userStories', function (done) {
+    it('should respond to GET /api/user-stories', function (done) {
       apiRequest().expect(200, done);
     });
 

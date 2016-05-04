@@ -34,7 +34,7 @@ describe('/api/', function () {
       request().expect(200, {
         'links': {
           'projects': 'api/projects',
-          'userStories': 'api/userStories'
+          'user-stories': 'api/user-stories'
         }
       }, done);
     });
