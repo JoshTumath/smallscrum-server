@@ -11,6 +11,7 @@ You will need the following things properly installed on your computer.
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) 4.x LTS version (with NPM)
+* [MongoDB](https://www.mongodb.com/)
 * [Mocha](https://mochajs.org/)
 
 If you do not already have the SmallScrum Ember application repository set up
@@ -34,4 +35,4 @@ instead from there.
 
 ### Running Tests
 
-* `motcha`
+* `mocha`
